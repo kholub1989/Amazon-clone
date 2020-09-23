@@ -4,6 +4,34 @@ import { Link, useHistory } from "react-router-dom";
 import { auth } from "../firebase";
 
 function Login() {
+  const history = useHistory();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const login = (e) => {
+    e.preventDefault();
+    // do the login logic...
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        // logged in and redirect to homepage...
+        history.push("/");
+      })
+      .catch((e) => alert(e.message));
+  };
+
+  const register = (e) => {
+    e.preventDefault();
+    // do the registration logic...
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        // created a user and logged in, redirect to home page...
+        history.push("/");
+      })
+      .catch((e) => alert(e.message));
+  };
+
   return (
     <div className="login">
       <Link to="/">
