@@ -1,4 +1,14 @@
+# Amazon-clone
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+[Deployment on Firebase](https://clone-65eee.firebaseapp.com/)
+
+![Amazon-clone](https://i.ibb.co/JzSpB4z/Screen-Shot-2020-09-23-at-3-05-57-PM.png)
+
+![Amazon-clone](https://i.ibb.co/6nMm7ks/Screen-Shot-2020-09-23-at-3-06-36-PM.png)
+
+![Amazon-clone](https://i.ibb.co/MnwNp9z/Screen-Shot-2020-09-23-at-3-06-04-PM.png)
 
 ## Available Scripts
 
